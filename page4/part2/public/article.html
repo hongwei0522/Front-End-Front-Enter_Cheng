@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+    <title>文章列表</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html"><img class="logo-img" src="image/FE_logo-4.png"/></a></div>
+        <nav class="header-nav">
+            <div class="header-nav-div"><a href="article.html">探索</a></div>
+            <div class="header-nav-div"><a>技能樹</a></div>
+            <div class="header-nav-div login"><a>登入</a></div>
+            <div class="search"><img class="search-img" id="webSearch" src="image/FE_search_green.png" /></div>
+        </nav>
+        <div class="search-div">
+            <p class="search-title">SEARCH</p>
+            <form class="search-bar"> 
+              <input class="search-input" placeholder="輸入名稱、所在城市或相關內容搜尋">
+              <img class="voice-button" src="image/microphone.svg">
+              <img class="search-button" src="image/FE_search_green.png">
+            </form>
+        </div>
+        <div class="search-outside"></div>
+    </header>
+
+    <section class="slide-container">
+        <img src="image/contact-key.jpg" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/front-enter.appspot.com/o/images%2Frotate-img-2.jpg?alt=media&amp;token=f28dbea4-af0c-4743-a75a-426198fe409e">
+        <img src="https://firebasestorage.googleapis.com/v0/b/front-enter.appspot.com/o/images%2Fudemy1.jpg?alt=media&amp;token=24876f82-cac4-4755-bdf0-f57d2c98b346">
+        <img src="https://firebasestorage.googleapis.com/v0/b/front-enter.appspot.com/o/images%2Frotate-img-3.jpg?alt=media&amp;token=8f7f8f02-5066-452a-863c-a4e715d2657a">
+        <div class="slide-textbox">
+            <p class="slide-text">蒐羅前端學校</p>
+        </div>
+    </section>
+
+    <div class="center-nav">
+        <div class="center-nav-box">
+        <div class="center-nav-div all"><a>全部</a></div>
+        <div class="center-nav-div 小班制"><a>小班制</a></div>
+        <div class="center-nav-div 放養制"><a>放養制</a></div>
+        <div class="center-nav-div 一對一"><a>一對一</a></div>
+        </div>
+    </div>
+
+    <aside class="aside"><img class="aside-img" src="image/FE_test_go.png" /></aside>
+
+    <main class="main-article"></main>
+
+    <div class="top">
+        <div class="top-icon"><img class="top-icon-img" src="image/FE_TOP.png"/></div>
+    </div>
+
+    <div class="loading-color"></div>
+    <div class="loading-animation">
+        <img class="loading-img" src="image/FE_logo-4.png" />
+    </div>
+
+    <footer>
+        <p class="footer-p"><a>聯絡</a></p>
+        <p class="footer-p m">&nbsp;&nbsp; 0970-261-267</p>
+        <p class="footer-p e">&nbsp;&nbsp; yolandastargirl@gmail.com</p>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com/profile.php?id=100004035624034" target="_blank">
+                <img class="footer-img" src="image/new-facebook-blue.svg">
+            </a>
+            <a href="https://line.me/ti/p/jP-Er5hysz" target="_blank">
+                <img class="footer-img" src="image/FE_line.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script type="module" src='./js/firebase.js'></script>
+    <script src='./js/app.js'></script>
+    <script src='./js/article.js'></script>
+    
+    <div class="test-go-outside">
+        <div class="test-go-div">
+            <p class="test-title">測驗說明</p>
+            <p class="test-preface">點選「開始測驗」後，系統將根據你的回答，找出最適合你的學習環境，並顯示有多少百分比的合適度。</p>
+            <p class="test-button-start">開始測驗</p>
+            <p class="test-question"></p>
+            <p class="test-number"></p>
+            <p class="test-select-one"></p>
+            <p class="test-select-two"></p>
+            <p class="test-select-three"></p>
+            <p class="test-select-four"></p>
+            <p class="test-select-five"></p>
+            <div class="test-end-circle"></div>
+            <div class="test-end-white"></div>
+            <a class="test-end-location">
+                <p class="test-end-result"></p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="login-outside">
+        <div class="login-div">
+            <div class="login-logo"></div>
+            <div class="login-form">
+                <input class="login-input-mail" placeholder="Email">
+                <input class="login-input-code" placeholder="******" type="password">
+            </div>
+            <p class="login-forget">忘記密碼？</p>
+            <div class="button-div">
+                <button class="login-button-register">註冊</button>
+                <button class="login-button-email">登入</button>
+            </div>
+            <p class="login-button-gmail">Log In With Gmail</p>
+        </div>
+    </div>
+
+    <div class="alert-outside">
+        <div class="alert-div">
+            <p class="alert-title">已成功登入會員</p>
+            <p class="alert-text">我們為您提供個人化頁面，儲存收藏的學校課程資訊</p>
+            <div class="alert-button">我知道了</div>
+        </div>
+    </div>
+</body>
+</html>
