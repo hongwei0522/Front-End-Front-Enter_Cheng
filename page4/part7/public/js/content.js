@@ -18,33 +18,6 @@ function showSlides() {
 }
 showSlides();
 
-// fetch('front-enter-export.json')
-//     .then(response => response.json())
-//     .then(data => {
-//         const articles = Object.values(data.article);
-//         const urlParams = new URLSearchParams(window.location.search);
-//         const articleId = urlParams.get('id');
-
-//         if (articleId) {
-//             articles.forEach(article => {
-//                 if (article.creatTime.toString() === articleId) {
-//                     app.get('.slide-text').textContent = article.name;
-//                     app.get('.main-content-title').textContent = article.topic;
-//                     app.get('.main-content-text').innerHTML = article.content;
-//                     app.get('.city').textContent = article.city;
-//                     app.get('.classtype').textContent = article.classType;
-//                     app.get('.teachway').textContent = article.teachWay;
-//                     app.get('.totalday').textContent = article.totalDay + '天';
-//                     app.get('.weekhour').textContent = article.weekHour + '小時';
-//                     app.get('.technology').textContent = article.technology;
-//                     app.get('.mail').textContent = article.mail;
-//                     app.get('.phone').textContent = article.phone;
-//                 }
-//             });
-//         }
-//     })
-//     .catch(error => console.error('Error:', error));
-
 document.addEventListener('DOMContentLoaded', function() {
     const db = getDatabase();
     const articlesRef = ref(db, '/article');

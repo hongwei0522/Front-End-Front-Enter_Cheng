@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         filterCity.forEach(button => {
             button.addEventListener('click',() => {onCityClick(articles,articleContainer,button)});
-        });      
+        });
 
         //跳轉頁面後從網址抓keyword搜尋
         const urlParams = new URLSearchParams(window.location.search);
@@ -187,6 +187,14 @@ function onCityClick(articles,articleContainer,button) {
     filteredCity.forEach(article => {
         addArticle(articleContainer,article);
     });
+    const articleElements = document.querySelectorAll('.article-a');
+        articleElements.forEach(function(articleElement) {
+            articleElement.addEventListener('click', function() {
+                const articleId = articleElement.id;
+                const url = 'content.html?id=' + encodeURIComponent(articleId);
+                window.location.href = url;
+            });
+        });
 }
 
 function addBookmark() {

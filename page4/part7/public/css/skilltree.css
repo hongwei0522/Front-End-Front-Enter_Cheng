@@ -464,3 +464,13 @@
 .icon-three:hover {
     transform: rotate(360deg);
 }
+
+@media (max-width: 768px) {
+    .main-right {
+        display: none;
+    }
+
+    .main-left {
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+.slide-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
+    margin-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+}
+
+.slide-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    object-fit: cover;
+}
+
+.slide-textbox {
+    position: absolute;
+    font-size: 24px;
+    background-color: rgba(128,128,128,0.7);
+    border-radius: 5px;
+    width: auto;
+    padding: 6px 12px;
+}
+
+.slide-text {
+    position: relative;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-left: 10px;
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(128,128,128);
+}
+
+.contact-text {
+    padding-bottom: 20px;
+    color: rgb(128,128,128);
+}
+
+[class^='contact-input'] {
+    width: 80%;
+    border-radius: 6px;
+    height: 20px;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: 1px solid rgb(207, 206, 206);
+    color: rgb(128,128,128);
+    letter-spacing: 3px;
+}
+
+[class^='contact-input']:focus {
+    outline: 3px ridge rgb(162 243 240);
+}
+
+.contact-content {
+    width: 80%;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: 1px solid rgb(207, 206, 206);
+    letter-spacing: 3px;
+    color: rgb(128,128,128);
+    font-family: '';
+}
+
+.contact-content:focus {
+    outline: 3px ridge rgb(162 243 240);
+}
+
+.contact-submit {
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(26, 216, 211);
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.contact-submit:hover {
+    opacity: 0.7;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.data-word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 83px;
+    width: auto;
+    height: 224px;
+    background-color: rgba(230, 230, 230, .3);
+    border-radius: 5px;
+}
+
+.data-img {
+    width: 32px;
+    height: 42px;
+    cursor: text;
+}
+
+.data-text {
+    font-size: 15px;
+    color: rgb(128,128,128);
+}
+
+.data-map {
+    margin-top: 20px;
+}
