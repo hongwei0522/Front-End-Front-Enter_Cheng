@@ -30,23 +30,23 @@
 }
 
 .image-left-one {
-    background: url('/image/2.jpg');
+    background: url('../image/2.jpg');
     background-size: cover;
 }
 .image-left-two {
-    background: url('/image/13.jpg');
+    background: url('../image/13.jpg');
     background-size: cover;
 }
 .image-left-three {
-    background: url('/image/15.jpg');
+    background: url('../image/15.jpg');
     background-size: cover;
 }
 .image-left-four {
-    background: url('/image/7.jpg');
+    background: url('../image/7.jpg');
     background-size: cover;
 }
 .image-left-five {
-    background: url('/image/AppWorksShool-rectangle.jpg');
+    background: url('../image/AppWorksShool-rectangle.jpg');
     background-size: cover;
 }
 
