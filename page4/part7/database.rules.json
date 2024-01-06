@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "emailUsers": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "article": {
+      ".read": true,
+      ".write": true
+    },
+    "quizData": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

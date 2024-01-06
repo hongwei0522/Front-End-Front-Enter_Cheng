@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/favicon.ico">
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+
+    <title>Front-Enter - 前端轉職資訊</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html"><img class="logo-img" src="image/FE_logo-4.png"/></a></div>
+        <nav class="header-nav">
+            <div class="header-nav-div"><a href="article.html">探索</a></div>
+            <div class="header-nav-div"><a href="skilltree.html">技能樹</a></div>
+            <div class="header-nav-div login"><a>登入</a></div>
+            <div class="search"><img class="search-img" id="webSearch" src="image/FE_search_green.png" /></div>
+        </nav>
+        <div class="search-div">
+            <p class="search-title">SEARCH</p>
+            <form class="search-bar"> 
+              <input class="search-input" placeholder="輸入名稱、所在城市或相關內容搜尋">
+              <img class="voice-button" src="image/microphone.svg">
+              <img class="search-button" src="image/FE_search_green.png">
+            </form>
+        </div>
+        <div class="search-outside"></div>
+    </header>
+
+    <section class="index-section">
+        <div>
+            <p class="section-active">FRONT-ENTER</p>
+            <p class="section-title">前端轉職資訊</p>
+            <div class="section-arrow"></div>
+        </div>
+    </section>
+
+    <aside class="aside"><img class="aside-img" src="image/FE_test_go.png" /></aside>
+
+    <main>
+        <div class="main-first">
+            <p class="main-p">想知道自己適合什麼學習環境嗎？</p>
+            <p class="main-p">可以點擊按鈕測測看哦！</p>
+            <button class="main-button" onclick="testGo()">測驗 GO</button>
+        </div>
+        <div class="main-second">
+            <p class="main-p">教室精選</p>
+            <button class="main-button"><a class="a-none" href="content.html?id=1538646651342">AppWorks School</a></button>
+            <button class="main-button"><a class="a-none" href="content.html?id=1539507849063">彭彭的課程教學</a></button>
+            <button class="main-button"><a class="a-none" href="content.html?id=1539674167504">五倍紅寶石</a></button>
+        </div>
+        <div class="main-third">
+            <div class="main-service">
+                <img class="service-img" src="image/FE_pen.png" />
+                <p class="service-title">探索</p>
+                <div class="service-line"></div>
+                <p class="service-p">我們提供公正的資訊，<br>幫您順利轉職，<br>並追蹤最新的業界動態。</p>
+                <button class="service-button"><a class="a-none" href="article.html">找學校</a></button>
+            </div>
+            <div class="main-service">
+                <img class="service-img" src="image/FE_pen.png" />
+                <p class="service-title">技能樹</p>
+                <div class="service-line"></div>
+                <p class="service-p">前端包含哪些技術？<br>你又學會了哪些？<br>趕緊點進來試試看。</p>
+                <button class="service-button"><a class="a-none" href="skilltree.html">技能樹</a></button>
+            </div>
+        </div>
+        <div class="main-forth">
+            <div class="forth-all">
+                <p class="forth-title">關於</p>
+                <div class="forth-line"></div>
+                <p class="forth-p">近年來，社會對於軟體工程師的需求急速增加，全台各地的補習也如雨後春筍般開業，
+                    然而人的時間有限，要如何找到適合自己的學習環境？<br><br>
+                    「Front-Enter」特別針對前端工程的學習資源，進行蒐集、分類，
+                    期待讓有志成為前端工程師的人，找到最適合自己的學習環境。                                        
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="top">
+        <div class="top-icon"><img class="top-icon-img" src="image/FE_TOP.png"/></div>
+    </div>
+
+    <div class="loading-color"></div>
+    <div class="loading-animation">
+        <img class="loading-img" src="image/FE_logo-4.png" />
+    </div>
+
+    <footer>
+        <p class="footer-p"><a href="contact.html">聯絡</a></p>
+        <p class="footer-p m">&nbsp;&nbsp; 0970-261-267</p>
+        <p class="footer-p e">&nbsp;&nbsp; yolandastargirl@gmail.com</p>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com/profile.php?id=100004035624034" target="_blank">
+                <img class="footer-img" src="image/new-facebook-blue.svg">
+            </a>
+            <a href="https://line.me/ti/p/jP-Er5hysz" target="_blank">
+                <img class="footer-img" src="image/FE_line.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src='./js/firebase.js'></script>
+    <script src='./js/app.js'></script>
+    <script type="module" src='./js/common.js'></script>
+    <script>function testGo(){app.get('.test-go-outside').style.display = 'flex';}</script>
+
+    <div class="test-go-outside">
+        <div class="test-go-div">
+            <p class="test-title">測驗說明</p>
+            <p class="test-preface">點選「開始測驗」後，系統將根據你的回答，找出最適合你的學習環境，並顯示有多少百分比的合適度。</p>
+            <p class="test-button-start">開始測驗</p>
+            <p class="test-question"></p>
+            <p class="test-number"></p>
+            <p class="test-select-one"></p>
+            <p class="test-select-two"></p>
+            <p class="test-select-three"></p>
+            <p class="test-select-four"></p>
+            <p class="test-select-five"></p>
+            <div class="test-end-circle"></div>
+            <div class="test-end-white"></div>
+            <a class="test-end-location">
+                <p class="test-end-result"></p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="login-outside">
+        <div class="login-div">
+            <div class="login-logo"></div>
+            <div class="login-form">
+                <input class="login-input-mail" placeholder="Email">
+                <input class="login-input-code" placeholder="******" type="password">
+            </div>
+            <p class="login-forget">忘記密碼？</p>
+            <div class="button-div">
+                <button class="login-button-register">註冊</button>
+                <button class="login-button-email">登入</button>
+            </div>
+            <p class="login-button-gmail">Log In With Gmail</p>
+        </div>
+    </div>
+
+    <div class="alert-outside">
+        <div class="alert-div">
+            <p class="alert-title">已成功登入會員</p>
+            <p class="alert-text">我們為您提供個人化頁面，儲存收藏的學校課程資訊</p>
+            <div class="alert-button">我知道了</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/skilltree.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="image/favicon.ico">
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <title>技能樹</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><a href="index.html"><img class="logo-img" src="image/FE_logo-4.png"/></a></div>
+        <nav class="header-nav">
+            <div class="header-nav-div"><a href="article.html">探索</a></div>
+            <div class="header-nav-div"><a>技能樹</a></div>
+            <div class="header-nav-div login"><a>登入</a></div>
+            <div class="search"><img class="search-img" id="webSearch" src="image/FE_search_green.png" /></div>
+        </nav>
+        <div class="search-div">
+            <p class="search-title">SEARCH</p>
+            <form class="search-bar"> 
+              <input class="search-input" placeholder="輸入名稱、所在城市或相關內容搜尋">
+              <img class="voice-button" src="image/microphone.svg">
+              <img class="search-button" src="image/FE_search_green.png">
+            </form>
+        </div>
+        <div class="search-outside"></div>
+    </header>
+
+    <section class="slide-container">
+        <img src="image/skill-tree-key.jpg" />
+        <div class="slide-textbox">
+            <p class="slide-text">技能樹</p>
+        </div>
+    </section>
+    <div class="main-top">
+        <p class="main-p">技能樹說明</p>
+        <p class="main-p">要成為一名稱職的前端，需要學會哪些技能呢？<br>不仿親自測試看看自己掌握了哪些能力，遊戲中只需點擊按鈕回答問題，答對即能接續挑戰。</p>
+    </div>
+
+    <aside class="aside"><img class="aside-img" src="image/FE_test_go.png" /></aside>
+
+    <main class="main-skilltree">
+        <div class="main-left">
+            <div class="skill-tip csstip">
+                <p>CSS<br><br>層疊樣式表（英語：Cascading Style Sheets，簡寫CSS），是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言。</p>
+            </div>
+            <div class="skill-tip jquerytip">
+                <p>jQuery<br><br>jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML與JavaScript之間的操作。</p>
+            </div>
+            <div class="skill-tip scsstip">
+                <p>SCSS<br><br>Sass是一個將指令碼解析成CSS的手稿語言，即SassScript。Sass包括兩套語法。最開始的語法叫做「縮排語法」，使用縮排來區分程式碼塊，並且用換行將不同規則分隔開。而較新的語法叫做「SCSS」。</p>
+            </div>
+            <div class="skill-tip bootstraptip">
+                <p>bootstrap<br><br>Bootstrap是一組用於網站和網路應用程式開發的開源前端框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。</p>
+            </div>
+        </div>
+        <div class="main-center">
+            <div class="skilltree-div">
+                <p class="skilltree-text htmldiv">HTML</p>
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-1"></div>
+            </div>
+
+            <div class="skilltree-div">
+                <p class="skilltree-text cssdiv">CSS</p> 
+                <div class="skilltree-line-2"></div>
+                <p class="skilltree-text jsdiv">JS</p>   
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-1 move1"></div>
+                <div class="skilltree-line-3 move2"></div>
+            </div>
+
+            <div class="skilltree-div">
+                <p class="skilltree-text jquerydiv">jQuery</p> 
+                <div class="skilltree-line-5"></div>
+                <p class="skilltree-text rwddiv">RWD</p> 
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-1 move3"></div>
+            </div>
+
+            <div class="skilltree-div">
+                <p class="skilltree-text githubdiv">GitHub</p> 
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-1 move4"></div>
+                <div class="skilltree-line-4"></div>
+            </div>
+
+            <div class="skilltree-div">
+                <p class="skilltree-text scssdiv">SCSS</p> 
+                <div class="skilltree-line-5"></div>
+                <p class="skilltree-text webpackdiv">Webpack</p> 
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-3"></div>
+                <div class="skilltree-line-5"></div>
+                <div class="skilltree-line-3"></div>
+            </div>
+
+            <div class="skilltree-div">
+                <p class="skilltree-text bootstrapdiv">bootstrap</p> 
+                <div class="skilltree-line-5"></div>
+                <p class="skilltree-text reactdiv">React</p> 
+            </div>
+
+            <div class="skilltree-div">
+                <div class="skilltree-line-1 move5"></div>  
+            </div>
+
+            <div class="skilltree-div ">
+                <p class="skilltree-text unittestdiv">Unit Test</p> 
+            </div>
+            <div class="user-icon"></div>
+        </div>
+        <div class="main-right">
+            <div class="skill-tip htmltip">
+                <p>HTML<br><br>超文件標示語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標示語言。</p>
+            </div>
+            <div class="skill-tip jstip">
+                <p>JavaScript<br><br>JavaScript是一門基於原型、函式先行的語言，是一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函數語言程式設計。</p>
+            </div>
+            <div class="skill-tip rwdtip">
+                <p>RWD<br><br>響應式網頁設計（英語：Responsive web design，通常縮寫為RWD），是一種網頁設計的技術做法，該設計可使網站在不同的裝置上瀏覽時，對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。</p>
+            </div>
+            <div class="skill-tip githubtip">
+                <p>GitHub<br><br>GitHub是透過Git進行版本控制的軟體原始碼代管服務，由GitHub公司（曾稱 Logical Awesome）開發者使用Ruby on Rails編寫而成。</p>
+            </div>
+            <div class="skill-tip webpacktip">
+                <p>Webpack<br><br>Webpack是一個開源的前端打包工具。Webpack提供了前端開發缺乏的模組化開發方式，將各種靜態資源視為模組，並從它生成優化過的程式碼。</p>
+            </div>
+            <div class="skill-tip reacttip">
+                <p>React<br><br>React是一個為資料提供彩現為HTML視圖的開源JavaScript庫。React視圖通常採用包含以自訂HTML標記規定的其他元件的元件彩現。</p>
+            </div>
+            <div class="skill-tip unittesttip">
+                <p>Unit Testing<br><br>在電腦編程中，單元測試（英語：Unit Testing）又稱為模組測試，是針對程式模組（軟體設計的最小單位）來進行正確性檢驗的測試工作。程式單元是應用的最小可測試部件。</p>
+            </div>
+        </div>
+        <div class="game-outside">
+            <div class="game-div">
+                <p class="game-title"></p>
+                <p class="game-select-one"></p>
+                <p class="game-select-two"></p>
+                <p class="game-select-three"></p>
+                <div class="arrow-continue"></div>
+            </div>
+        </div>
+        <div class="full-type">
+            <div class="type-word"></div>
+        </div>
+        <audio id="bgMusic" loop="true">
+            <source src="./image/typing-sound-1.mp3" type="audio/mp3">
+        </audio>
+        <div class="icon-outside">
+            <div class="icon-div">
+                <div class="icon-text">請選擇 Icon</div>
+                <div class="icon-img">
+                    <div class="icon-one"></div>
+                    <div class="icon-two"></div>
+                    <div class="icon-three"></div>
+                </div>
+    
+            </div>
+        </div>
+    </main>
+
+    <div class="top">
+        <div class="top-icon"><img class="top-icon-img" src="image/FE_TOP.png"/></div>
+    </div>
+
+    <div class="loading-color"></div>
+    <div class="loading-animation">
+        <img class="loading-img" src="image/FE_logo-4.png" />
+    </div>
+
+    <footer>
+        <p class="footer-p"><a href="contact.html">聯絡</a></p>
+        <p class="footer-p m">&nbsp;&nbsp; 0970-261-267</p>
+        <p class="footer-p e">&nbsp;&nbsp; yolandastargirl@gmail.com</p>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com/profile.php?id=100004035624034" target="_blank">
+                <img class="footer-img" src="image/new-facebook-blue.svg">
+            </a>
+            <a href="https://line.me/ti/p/jP-Er5hysz" target="_blank">
+                <img class="footer-img" src="image/FE_line.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script type="module" src='./js/firebase.js'></script>
+    <script src='./js/app.js'></script>
+    <script type="module" src='./js/common.js'></script>
+    <script src='./js/skilltree.js'></script>
+
+    <div class="test-go-outside">
+        <div class="test-go-div">
+            <p class="test-title">測驗說明</p>
+            <p class="test-preface">點選「開始測驗」後，系統將根據你的回答，找出最適合你的學習環境，並顯示有多少百分比的合適度。</p>
+            <p class="test-button-start">開始測驗</p>
+            <p class="test-question"></p>
+            <p class="test-number"></p>
+            <p class="test-select-one"></p>
+            <p class="test-select-two"></p>
+            <p class="test-select-three"></p>
+            <p class="test-select-four"></p>
+            <p class="test-select-five"></p>
+            <div class="test-end-circle"></div>
+            <div class="test-end-white"></div>
+            <a class="test-end-location">
+                <p class="test-end-result"></p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="login-outside">
+        <div class="login-div">
+            <div class="login-logo"></div>
+            <div class="login-form">
+                <input class="login-input-mail" placeholder="Email">
+                <input class="login-input-code" placeholder="******" type="password">
+            </div>
+            <p class="login-forget">忘記密碼？</p>
+            <div class="button-div">
+                <button class="login-button-register">註冊</button>
+                <button class="login-button-email">登入</button>
+            </div>
+            <p class="login-button-gmail">Log In With Gmail</p>
+        </div>
+    </div>
+
+    <div class="alert-outside">
+        <div class="alert-div">
+            <p class="alert-title">已成功登入會員</p>
+            <p class="alert-text">我們為您提供個人化頁面，儲存收藏的學校課程資訊</p>
+            <div class="alert-button">我知道了</div>
+        </div>
+    </div>
+</body>
+</html>
